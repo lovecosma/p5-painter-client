@@ -12,6 +12,7 @@ function preload(){
 }
 
 
+
 function setup() {
     // use parent to render the canvas in this ref
     // (without that p5 will render the canvas outside of your component)
@@ -19,7 +20,7 @@ function setup() {
     pixelDensity(1)
     video = createCapture(VIDEO)
     video.size(width/vScale, height/vScale)
-    for(let i = 0; i < 1; i++){
+    for(let i = 0; i < 4; i++){
         sound_particles.push(new SoundParticle(random(0, width), random(0, height), i))
     }
     for(let i = 0; i < 100; i++){
